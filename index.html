@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donatela - Kelezatan Donat Premium Artisanal</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg fixed-top site-navbar">
+        <div class="container-xxl">
+            <a href="#hero" class="navbar-brand d-flex align-items-center gap-3">
+                <span class="brand-mark"><i class="fa-solid fa-cookie"></i></span>
+                <span><strong class="d-block brand-name">DONATELA</strong><small class="brand-kicker">Donuts &amp; Co.</small></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Buka navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="mobileNav" class="collapse navbar-collapse">
+                <nav class="navbar-nav ms-auto align-items-lg-center gap-lg-2 py-3 py-lg-0">
+                    <a class="nav-link" href="#hero">Beranda</a>
+                    <a class="nav-link" href="#keunggulan">Keunggulan</a>
+                    <a class="nav-link" href="#menu">Varian Donat</a>
+                    <a class="nav-link" href="#komentar">Komentar</a>
+                    <a class="nav-link" href="#lokasi">Lokasi</a>
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </nav>
+                <div class="d-flex align-items-center gap-3 ms-lg-3 pb-3 pb-lg-0">
+                    <button id="cartBtn" class="btn btn-cart position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartPanel" aria-controls="cartPanel" aria-label="Buka keranjang">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span id="cartBadge" class="badge text-bg-danger position-absolute top-0 start-100 translate-middle d-none">0</span>
+                    </button>
+                    <a href="#menu" class="btn btn-brand text-nowrap">Pesan Sekarang <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container-xxl">
+                <div class="row align-items-center gx-4 gy-5">
+                    <div class="col-lg-7 text-center text-lg-start">
+                        <div class="hero-kicker mb-4"><i class="fa-solid fa-fire text-warning me-2"></i>Donatela Homemade &amp; Fresh Everyday</div>
+                        <h1 class="display-4 fw-bold text-dark lh-sm mb-4">Sensasi Donat Empuk dengan <span class="brand-gradient-text">Lumeran Melted</span> Premium</h1>
+                        <p class="lead text-secondary mb-4">Dibuat dengan tepung pilihan dan resep rahasia family artisan. Rasakan kelembutan adonan tanpa pengawet yang lumer di setiap gigitan.</p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                            <a href="#menu" class="btn btn-brand btn-lg">Lihat Varian Donat <i class="fa-solid fa-utensils ms-2"></i></a>
+                            <a href="https://wa.me/628979163029?text=Halo%20Donatela,%20saya%20ingin%20tanya%20mengenai%20donat" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-lg bg-white"><i class="fa-brands fa-whatsapp text-success me-2"></i>Tanya via WA</a>
+                        </div>
+                        <div class="social-proof d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-4 mt-5 pt-4">
+                            <div class="d-flex align-items-center gap-2"><span class="star-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><strong class="fs-5 text-dark">5.0/5</strong></div>
+                            <div><strong class="fs-5 text-dark">25.000+</strong><span class="ms-1 text-secondary">Box Terjual</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="hero-image-wrap">
+                            <img src="donatmatcha.avif.avif" alt="Donat matcha Donatela" class="img-fluid hero-image">
+                            <div class="hero-image-badge d-none d-sm-flex align-items-center gap-3">
+                                <span class="badge-icon"><i class="fa-solid fa-certificate"></i></span>
+                                <span><strong class="d-block">100% Halal &amp; Higienis</strong><small class="text-secondary">Bahan Alami Tanpa Pengawet</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-xxl promo-section">
+            <div class="promo-banner d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+                <div class="text-center text-md-start">
+                    <span class="badge text-bg-warning text-dark mb-3">Promo Spesial Bulan Ini</span>
+                    <h2 class="h3 fw-bold">Beli 1 Dozen (12 pcs) Gratis 2 Donat Classic!</h2>
+                    <p class="mb-0 text-white-50">Berlaku untuk pengiriman instant &amp; take-away. Gunakan kode promo <code class="promo-code">LUMERLVR</code> di checkout WhatsApp.</p>
+                </div>
+                <a href="#menu" class="btn btn-warning fw-bold text-nowrap">Klaim Promo Now</a>
+            </div>
+        </section>
+
+        <section id="keunggulan" class="section-pad bg-white">
+            <div class="container-xxl">
+                <div class="section-heading">
+                    <p class="section-eyebrow">Mengapa Memilih Kami?</p>
+                    <h2>Alasan Donatela Selalu Dicari</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-xl-3"><article class="feature-card h-100"><span class="feature-icon icon-brand"><i class="fa-solid fa-wheat-awn"></i></span><h3 class="h5 fw-bold">Bahan Premium</h3><p class="mb-0 text-secondary">Menggunakan tepung Jepang berkualitas tingi dan cokelat impor asli untuk rasa meleleh sempurna.</p></article></div>
+                    <div class="col-sm-6 col-xl-3"><article class="feature-card h-100"><span class="feature-icon icon-amber"><i class="fa-solid fa-clock-rotate-left"></i></span><h3 class="h5 fw-bold">Fresh Every Morning</h3><p class="mb-0 text-secondary">Donat digoreng dan dihias setiap pagi. Kami tidak pernah menjual donat sisa hari kemarin!</p></article></div>
+                    <div class="col-sm-6 col-xl-3"><article class="feature-card h-100"><span class="feature-icon icon-brand"><i class="fa-solid fa-heart"></i></span><h3 class="h5 fw-bold">0% Pengawet</h3><p class="mb-0 text-secondary">Aman dikonsumsi anak-anak dan keluarga karena dibuat secara alami tanpa pemanis buatan.</p></article></div>
+                    <div class="col-sm-6 col-xl-3"><article class="feature-card h-100"><span class="feature-icon icon-amber"><i class="fa-solid fa-truck-fast"></i></span><h3 class="h5 fw-bold">Kirim Aman Instant</h3><p class="mb-0 text-secondary">Kemasan box khusus anti-penyok menjamin kerapihan toping donat tiba di rumah Anda.</p></article></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="section-pad section-tint">
+            <div class="container-xxl">
+                <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-4 mb-5">
+                    <div><p class="section-eyebrow">Katalog Donat</p><h2 class="section-title">Pilih Donat Favoritmu di Donatela</h2></div>
+                    <div id="filterTabs" class="d-flex flex-wrap gap-2">
+                        <button class="btn btn-filter active filter-btn" data-category="all" type="button">Semua Donat</button>
+                        <button class="btn btn-filter filter-btn" data-category="classic" type="button">Classic</button>
+                        <button class="btn btn-filter filter-btn" data-category="lumer" type="button">Melting Topping</button>
+                        <button class="btn btn-filter filter-btn" data-category="hampers" type="button">Paket Box</button>
+                    </div>
+                </div>
+                <div id="productGrid" class="row g-4"></div>
+            </div>
+        </section>
+
+        <section id="komentar" class="section-pad bg-white">
+            <div class="container-xxl">
+                <div class="section-heading mb-5">
+                    <p class="section-eyebrow">Komentar</p>
+                    <h2>Cerita tentang Donatela</h2>
+                    <p class="text-secondary mt-3 mb-0">Aldi, Dwiki, Arul, dan 99+ komentar lainnya</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-xl-4"><article class="review-card h-100"><p>“Donat gula halusnya lembut dan enak, harganya juga ramah di kantong.”</p><div class="d-flex align-items-center gap-3 mt-4"><span class="review-avatar avatar-amber">A</span><strong>Aldi</strong></div></article></div>
+                    <div class="col-md-6 col-xl-4"><article class="review-card h-100"><p>“Paket Half Dozen-nya pas buat dinikmati bareng keluarga. Varian rasanya enak.”</p><div class="d-flex align-items-center gap-3 mt-4"><span class="review-avatar avatar-green">D</span><strong>Dwiki</strong></div></article></div>
+                    <div class="col-md-6 col-xl-4"><article class="review-card h-100"><p>“Rasanya enak dan teksturnya lembut. Paketnya juga cocok buat dibagikan.”</p><div class="d-flex align-items-center gap-3 mt-4"><span class="review-avatar avatar-rose">A</span><strong>Arul</strong></div></article></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lokasi" class="section-pad section-tint">
+            <div class="container-xxl">
+                <div class="d-flex flex-column flex-sm-row align-items-sm-end justify-content-between gap-3 mb-4">
+                    <div><p class="section-eyebrow">Lokasi Kami</p><h2 class="section-title">Pondok Hijau Setiabudi Bandung</h2></div>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Pondok%20Hijau%20Setiabudi%20Bandung" target="_blank" rel="noopener noreferrer" class="link-brand fw-bold">Buka di Google Maps <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                </div>
+                <div class="map-frame"><iframe src="https://www.google.com/maps?q=Pondok%20Hijau%20Setiabudi%20Bandung&amp;output=embed" title="Peta lokasi Donatela di Pondok Hijau Setiabudi Bandung" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+            </div>
+        </section>
+
+        <section id="faq" class="section-pad bg-white">
+            <div class="container faq-container">
+                <div class="section-heading mb-5"><p class="section-eyebrow">Pertanyaan Populer</p><h2>Frequently Asked Questions</h2></div>
+                <div class="accordion" id="faqContainer">
+                    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">Berapa lama donat Donatela tahan disimpan?</button></h3><div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#faqContainer"><div class="accordion-body">Donat kami paling nikmat dikonsumsi di hari yang sama (Fresh). Namun dapat bertahan 2-3 hari di suhu ruangan sejuk dalam wadah tertutup kedap udara.</div></div></div>
+                    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Apakah donat ready stock setiap saat?</button></h3><div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqContainer"><div class="accordion-body">Kami memproduksi batch donat terbatas setiap pagi untuk menjaga kesegaran. Disarankan untuk memesan di pagi hari atau pre-order H-1 untuk pembelian dalam jumlah besar.</div></div></div>
+                    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">Bagaimana cara memesan untuk acara ulang tahun / kantor?</button></h3><div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqContainer"><div class="accordion-body">Anda dapat langsung memilih paket 'Hampers Box' di website ini atau menghubungi admin WhatsApp kami untuk custom ucapan dan pita gift box.</div></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container-xxl">
+            <div class="row gx-4 gy-5 pb-5">
+                <div class="col-md-6 col-xl-3"><div class="d-flex align-items-center gap-3 mb-3"><span class="brand-mark footer-mark"><i class="fa-solid fa-cookie"></i></span><strong class="fs-5 text-white">DONATELA</strong></div><p class="text-white-50 mb-0">UMKM Kuliner Donat Artisanal dengan varian lezat premium, empuk alami, dan tanpa bahan pengawet.</p></div>
+                <div class="col-6 col-md-3 col-xl-2"><h3 class="footer-heading">Navigasi</h3><ul class="list-unstyled footer-links"><li><a href="#hero">Beranda</a></li><li><a href="#keunggulan">Keunggulan</a></li><li><a href="#menu">Varian Donat</a></li><li><a href="#komentar">Komentar</a></li><li><a href="#lokasi">Lokasi</a></li></ul></div>
+                <div class="col-6 col-md-3 col-xl-3"><h3 class="footer-heading">Jam Operasional</h3><ul class="list-unstyled footer-links"><li>Senin - Jumat: 08:00 - 20:00 WIB</li><li>Sabtu - Minggu: 08:00 - 21:00 WIB</li><li class="text-warning">*Atau sampai stok harian habis</li></ul></div>
+                <div class="col-md-6 col-xl-4"><h3 class="footer-heading">Hubungi Kami</h3><ul class="list-unstyled footer-links"><li><i class="fa-solid fa-location-dot text-warning me-2"></i>Pondok Hijau Setiabudi Bandung</li><li><a href="https://wa.me/628979163029?text=Halo%20Donatela,%20saya%20ingin%20bertanya%20mengenai%20donat" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp text-success me-2"></i>+62 897-9163-029</a></li><li><i class="fa-brands fa-instagram text-danger me-2"></i>@donatela.donuts</li></ul></div>
+            </div>
+            <div class="footer-bottom d-flex flex-column flex-sm-row justify-content-between gap-2"><span>&copy; 2026 Donatela. All rights reserved.</span><span>Made with <i class="fa-solid fa-heart text-danger"></i> for Donut Lovers</span></div>
+        </div>
+    </footer>
+
+    <div id="cartPanel" class="offcanvas offcanvas-end cart-offcanvas" tabindex="-1" aria-labelledby="cartTitle">
+        <div class="offcanvas-header border-bottom px-4 py-3"><h2 id="cartTitle" class="offcanvas-title h5 fw-bold"><i class="fa-solid fa-basket-shopping brand-text me-2"></i>Keranjang Donat Saya</h2><button id="closeCart" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Tutup"></button></div>
+        <div id="cartItemsContainer" class="offcanvas-body d-flex flex-column gap-3"></div>
+        <div class="cart-checkout border-top p-4">
+            <div class="mb-3"><label for="deliveryType" class="form-label small fw-bold text-uppercase">Metode Pengiriman</label><select id="deliveryType" class="form-select"><option value="Instant Delivery (Gojek/Grab)">Kurir Instant (Gojek/Grab)</option><option value="Takeaway / Ambil di Toko">Ambil Mandiri di Outlet</option><option value="COD (Bayar di Tempat)">COD (Bayar di Tempat)</option></select></div>
+            <input type="text" id="orderNotes" class="form-control mb-3" placeholder="Catatan Tambahan (misal: tulisan ucapan)...">
+            <div class="d-flex justify-content-between small text-secondary mb-2"><span>Total Item:</span><strong id="cartTotalItems" class="text-dark">0 pcs</strong></div>
+            <div class="d-flex justify-content-between align-items-center border-top pt-3 mb-3"><strong>Total Harga:</strong><strong id="cartTotalPrice" class="fs-5 brand-text">Rp 0</strong></div>
+            <button id="checkoutWaBtn" class="btn btn-success w-100 py-3 fw-bold" type="button"><i class="fa-brands fa-whatsapp me-2"></i>Kirim Pesanan ke WhatsApp</button>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toast" class="toast align-items-center text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+            <div class="d-flex"><div class="toast-body"><i class="fa-solid fa-circle-check text-success me-2"></i><span id="toastMsg">Berhasil ditambahkan</span></div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Tutup"></button></div>
+        </div>
+    </div>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
